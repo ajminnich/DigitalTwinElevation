@@ -100,11 +100,11 @@ class Elevation:
         plt.suptitle('Elevation Graph')
         plt.xlabel('Time (s)')
         plt.ylabel('Height (m)')
-        plt.xlim(0,self.time_max+self.time_max*0.05)
+        plt.xlim(0,self.time_max+self.time_max*0.05) #creates bounds that dont cut off data
         plt.ylim(0,self.z_max+self.z_max*0.05)
         #plt.show() 
 
 
-test = Elevation(mass=5, x_coords=range(0, 50), x1=15, x2=30, theta1=30, theta2=5, theta3=50, drive_force=50)
+test = Elevation(mass=5, x_coords=range(0, 50), x1=15, x2=30, theta1=10, theta2=50, theta3=20, drive_force=50) #insets values to run code with
 
 print(test.z_coords)
